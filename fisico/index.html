@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Clínica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Avaliação Clínica</h1>
+
+    <!-- 🧑 DADOS PESSOAIS -->
+    <div class="card">
+        <h2>🧑 Dados Pessoais</h2>
+
+        <div class="card-grid">
+            <div>
+                <label>Nome</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div>
+                <label>Idade</label>
+                <input type="number" id="idade">
+            </div>
+
+            <div>
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option value="">Selecione</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🏥 PARÂMETROS CLÍNICOS -->
+    <div class="card">
+        <h2>🏥 Parâmetros Clínicos</h2>
+
+        <div class="card-grid">
+            <div>
+                <label>Glicose Capilar</label>
+                <input type="number" id="glicose">
+            </div>
+
+            <div>
+                <label>Pressão Sistólica</label>
+                <input type="number" id="sistolica">
+            </div>
+
+            <div>
+                <label>Pressão Diastólica</label>
+                <input type="number" id="diastolica">
+            </div>
+
+            <div>
+                <label>Saturação de O2 (%)</label>
+                <input type="number" id="saturacao">
+            </div>
+
+            <div>
+                <label>Frequência Cardíaca</label>
+                <input type="number" id="fc">
+            </div>
+        </div>
+    </div>
+
+    <!-- 📏 COMPOSIÇÃO CORPORAL -->
+    <div class="card">
+        <h2>📏 Composição Corporal</h2>
+
+        <div class="card-grid">
+            <div>
+                <label>Peso (kg)</label>
+                <input type="number" id="peso">
+            </div>
+
+            <div>
+                <label>Altura (m)</label>
+                <input type="number" id="altura">
+            </div>
+
+            <div>
+                <label>Cintura (cm)</label>
+                <input type="number" id="cintura">
+            </div>
+
+            <div>
+                <label>Quadril (cm)</label>
+                <input type="number" id="quadril">
+            </div>
+        </div>
+    </div>
+
+    <!-- 🔘 BOTÃO -->
+    <button onclick="avaliar()">Avaliar</button>
+
+    <!-- 📊 RESULTADO -->
+    <div class="card resultado-box">
+        <h2>📊 Resultado</h2>
+        <pre id="resultado"></pre>
+    </div>
+
+</div>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>
